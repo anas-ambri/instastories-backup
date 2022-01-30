@@ -35,7 +35,9 @@ Then open `prefs.json` in a text editor. Add a `cookie` field like this:
 ...
 ```
 
-Note: older syntax with a `headers` field is still valid.
+The cookie might require some additional processing:
+- Remove any `\0` characters
+- Escape any `"`
 
 ## Select users to backup
 
