@@ -3,3 +3,5 @@ stories.sqlite3
 .vscode/
 *.pyc
 __pycache__/
+prefs.json
+.DS_Store

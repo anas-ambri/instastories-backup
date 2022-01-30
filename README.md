@@ -17,10 +17,6 @@ Next, run this in terminal in the directory where you cloned this to.
 
 Instagram allows only authenticated users to watch (and download) stories if you are not logged in. If you do not use 2FA on your IG account, it's preferred that you enter your username and password in the `prefs.json` file. If you do use 2FA or for some reason do not want to store your credentials in a file, you can login into Instagram from a browser and copy your session cookie to `prefs.json`.
 
-### Username and password
-
-Open the `prefs.json` file in a text editor and replace `insert username` and `insert password` with credentials for an Instagram account.
-
 ### Provide the cookies
 
 You will need to get the cookie: header to be sent to Instagram to authenticate it's you.To obtain the cookie, login into http://instagram.com.
@@ -41,11 +37,9 @@ The cookie might require some additional processing:
 
 ## Select users to backup
 
-Edit the `"usernames:"` section of `prefs.json`, replacing the examples with usernames of users whose Stories you want to backup.
+Edit the `"ids:"` section of `prefs.json`, replacing the examples with ids and usernames of users whose Stories you want to backup.
 
 Usernames of Instagram users change pretty frequently. What doesn't change is their IDs.
-
-After the first run of the script, the `usernames` field of `prefs.json` will get changed to `ids`, so don't be surprised.
 
 # Usage
 To run the program:
